@@ -1,5 +1,5 @@
-import { clients } from '../constants';
-import styles from '../style';
+import { clients } from "../constants";
+import styles from "../style";
 
 const Clients = () => (
   <section className={`${styles.flexCenter} my-4`}>
@@ -11,8 +11,8 @@ const Clients = () => (
         >
           <img
             src={client.logo}
-            alt='client_logo'
-            className='sm:w-[192px] w-[100px] object-contain invert-1'
+            alt="client_logo"
+            className="sm:w-[192px] w-[100px] object-contain invert-1"
           />
         </div>
       ))}

@@ -13,6 +13,8 @@ import {
   Testimonials,
   Hero,
 } from "./components";
+import { useEffect } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const MainContent = () => {
   return (
@@ -31,14 +33,35 @@ const MainContent = () => {
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Stats />
-          <Billing />
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Stats />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            {" "}
+            <Billing />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Business />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <CardDeal />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Clients />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <CTA />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <Footer />
+          </ScrollAnimation>
+          {/* <Billing />
           <Business />
-          <CardDeal />
+          <CardDeal /> */}
           {/* <Testimonials /> */}
-          <Clients />
+          {/* <Clients />
           <CTA />
-          <Footer />
+          <Footer /> */}
         </div>
       </div>
     </div>

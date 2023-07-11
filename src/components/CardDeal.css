@@ -1,5 +1,5 @@
 .text-content {
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 4s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }

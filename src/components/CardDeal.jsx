@@ -54,13 +54,14 @@ const CardDeal = () => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(handleNext, 3000); // Change content every 2 seconds
+    let timer;
+
+    timer = setTimeout(handleNext, 4000); // Start the initial timer
 
     return () => {
       clearTimeout(timer); // Clear the timer when the component is unmounted or updated
     };
   }, [activeIndex]);
-
   return (
     <section className={layout.section}>
       <div className={layout.sectionInfo}>
