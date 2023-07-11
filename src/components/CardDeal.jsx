@@ -40,7 +40,6 @@ const CardDeal = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [doAnimate, setAnimate] = useState(false);
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
@@ -52,7 +51,6 @@ const CardDeal = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === textItems.length - 1 ? 0 : prevIndex + 1
     );
-    doAnimate(true);
   };
 
   useEffect(() => {
@@ -91,8 +89,15 @@ const CardDeal = () => {
             <ChevronRight size={20} />
           </button>
         </div>
-
-        <Button styles={`mt-10`} />
+        <div
+          onClick={() => {
+            window.open(
+              "https://medium.com/@asetpayment/asetpay-testnets-and-mainnet-secure-seamless-crypto-payment-solution-ed655feaf8ce"
+            );
+          }}
+        >
+          <Button styles={`mt-10`} />
+        </div>
       </div>
 
       <div className={layout.sectionImg}>
