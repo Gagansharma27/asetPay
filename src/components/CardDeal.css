@@ -1,0 +1,35 @@
+.text-content {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+/* .text-content:hover {
+  animation-play-state: paused;
+} */
+
+.text-content2 {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
